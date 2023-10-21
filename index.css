@@ -1,15 +1,22 @@
 * {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     background-color: antiquewhite;
+    margin: 0;
 }
 
 header {
     background-color: rgb(109, 56, 28);
     padding: 25px;
+    box-shadow: 0 0 20px black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 nav a {
@@ -17,4 +24,59 @@ nav a {
     color: white;
     padding: 20px;
     font-weight: bold;
+}
+
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
+.inicio img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.204);
+    z-index: 1;
+}
+
+.compra {
+    position: absolute;
+    background-color: rgb(109, 56, 28);
+    border-radius: 10px;
+    left: 70%;
+    top: 50%;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.compra p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.compra button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 40px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.compra button:hover {
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    transition: 250ms;
 }
